@@ -2,6 +2,7 @@
 import { createStackNavigator, TransitionPresets } from "@react-navigation/stack";
 import React, { FC } from 'react'
 import { Routes } from "../../../constants/config";
+import { CircularProgressScreen } from "../../screen/CircularProgressScreen";
 import { ColorPickerScreen } from "../../screen/ColorPickerScreen";
 import { HomeScreen } from "../../screen/HomeScreen";
 
@@ -31,6 +32,13 @@ const HomeNavigation: FC = () => {
             <Stack.Screen
                 name={Routes.COLOR_PICKER_SCREEN}
                 component={ColorPickerScreen}
+                options={{
+                    ...TransitionPresets.SlideFromRightIOS
+                }}
+            />
+            <Stack.Screen
+                name={Routes.CIRCULAR_PROGRESS_SCREEN}
+                component={CircularProgressScreen}
                 options={{
                     ...TransitionPresets.ModalSlideFromBottomIOS
                 }}
