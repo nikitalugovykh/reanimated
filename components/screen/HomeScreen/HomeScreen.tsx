@@ -24,6 +24,11 @@ const HomeScreen: FC = () => {
                 color = {'green'}
                 onPress={()=> navigation.navigate(Routes.LIST_SCREEN)}
             />
+            <Button
+                title={'Ripple effect'}
+                color = {'green'}
+                onPress={()=> navigation.navigate(Routes.RIPPLE_EFFECT_SCREEN)}
+            />
         </View>
     )
 }
