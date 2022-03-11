@@ -10,6 +10,7 @@ export enum Routes {
     COLOR_PICKER_SCREEN = 'color_picker_screen',
     CIRCULAR_PROGRESS_SCREEN = 'circular_progress_screen',
     LIST_SCREEN = 'list_screen',
+    RIPPLE_EFFECT_SCREEN = 'ripple_effect_screen',
     
     
     

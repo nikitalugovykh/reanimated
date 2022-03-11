@@ -6,6 +6,7 @@ import { CircularProgressScreen } from "../../screen/CircularProgressScreen";
 import { ColorPickerScreen } from "../../screen/ColorPickerScreen";
 import { HomeScreen } from "../../screen/HomeScreen";
 import { ListScreen } from "../../screen/ListScreen";
+import { RippleEffectScreen } from "../../screen/RippleEffectScreen";
 
 
 
@@ -47,6 +48,13 @@ const HomeNavigation: FC = () => {
             <Stack.Screen
                 name={Routes.LIST_SCREEN}
                 component={ListScreen}
+                options={{
+                    ...TransitionPresets.DefaultTransition
+                }}
+            />
+            <Stack.Screen
+                name={Routes.RIPPLE_EFFECT_SCREEN}
+                component={RippleEffectScreen}
                 options={{
                     ...TransitionPresets.DefaultTransition
                 }}
