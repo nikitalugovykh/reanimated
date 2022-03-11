@@ -14,6 +14,16 @@ const HomeScreen: FC = () => {
                 color = {'green'}
                 onPress={()=> navigation.navigate(Routes.COLOR_PICKER_SCREEN)}
             />
+            <Button
+                title={'Circular progress'}
+                color = {'green'}
+                onPress={()=> navigation.navigate(Routes.CIRCULAR_PROGRESS_SCREEN)}
+            />
+            <Button
+                title={'List'}
+                color = {'green'}
+                onPress={()=> navigation.navigate(Routes.LIST_SCREEN)}
+            />
         </View>
     )
 }
