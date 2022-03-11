@@ -5,6 +5,7 @@ import { Routes } from "../../../constants/config";
 import { CircularProgressScreen } from "../../screen/CircularProgressScreen";
 import { ColorPickerScreen } from "../../screen/ColorPickerScreen";
 import { HomeScreen } from "../../screen/HomeScreen";
+import { ListScreen } from "../../screen/ListScreen";
 
 
 
@@ -41,6 +42,13 @@ const HomeNavigation: FC = () => {
                 component={CircularProgressScreen}
                 options={{
                     ...TransitionPresets.ModalSlideFromBottomIOS
+                }}
+            />
+            <Stack.Screen
+                name={Routes.LIST_SCREEN}
+                component={ListScreen}
+                options={{
+                    ...TransitionPresets.DefaultTransition
                 }}
             />
            

@@ -9,6 +9,7 @@ export enum Routes {
     HOME_SCREEN = 'home_screen',
     COLOR_PICKER_SCREEN = 'color_picker_screen',
     CIRCULAR_PROGRESS_SCREEN = 'circular_progress_screen',
+    LIST_SCREEN = 'list_screen',
     
     
     
